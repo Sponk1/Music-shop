@@ -1,9 +1,9 @@
-@use postcss-color-function;
-@use postcss-nested;
+/* @use postcss-color-function;
+@use postcss-nested; */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
 
 .full-body {
-    /* display: block; */
+    display:inline-block;
     width: 100%;
     background: #141414;
 }
@@ -52,4 +52,52 @@
     border-bottom: 1px solid #575756;
     border-radius: 0;
     background-position: 100% center;
+}
+
+.tools-img {
+    display: flex;;
+    justify-content: center;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.piano-img {
+    display: flex;
+    max-width: 730px;
+    padding-right: 15px;
+}
+
+.guitar-n-drum-img {
+    display: grid;
+}
+
+.guitar-img {
+    display: inline-block;
+}
+
+.drums-img {
+    align-self: flex-end;
+}
+
+.divider {
+    display: block;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.divider hr {
+    width: 1074px;
+}
+
+.map-n-desc {
+    display: grid;
+    margin-top: 70px;
+    width: 100%;
+    background: #383636;
+    justify-content: center;
+}
+
+.map {
+    width: 734px;
+    height: 358px;
 }
