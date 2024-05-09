@@ -1,8 +1,10 @@
 import React from "react"
 import "./header.css"
+import { NavLink } from "react-router-dom"
 import scripkey from "../../img/scrip-key.svg"
 import tglogo from "../../img/tglogo.svg"
 import profilepic from "../../img/profilepic.svg"
+import CatalogMain from "../../pages/CatalogMain.jsx"
 
 const Header = () => {
 
@@ -21,7 +23,7 @@ const Header = () => {
         </div>
             <div className="bottom-head">
                 <nav className="nav-bar-left">
-                    <a href="#">КАТАЛОГ</a>
+                    <a href="/CatalogMain">КАТАЛОГ</a>
                     <a href="#">ПОКУПАТЕЛЯМ</a>
                 </nav>
                 <nav className="nav-bar-right">
