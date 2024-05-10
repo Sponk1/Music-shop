@@ -8,7 +8,7 @@ const CatalogBody = () => {
         <div>
             <span>Каталог</span>
             <div className="navigation">
-                <a href="#">Главная</a>
+                <NavLink to={"/"}>Главная</NavLink>
                 <hr />
                 <a href="#">Каталог</a>
             </div>

@@ -3,7 +3,7 @@ import "./homeBody.css"
 import pianoImg from "../../../img/PianoCarousel.png"
 import guitarImg from "../../../img/GuitarCarousel.png"
 import drumImg from "../../../img/DrumsCarousel.png"
-import { BiColor } from "react-icons/bi"
+
 
 
 const HomeBody = () => {
