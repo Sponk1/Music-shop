@@ -3,6 +3,13 @@ import "./catalogBodyMain.css";
 import { NavLink } from "react-router-dom";
 // import Home from "../../../pages/Home";
 import pianos from "../../../img/PianosCard.png";
+import guitar from "../../../img/Guitar.png";
+import drums from "../../../img/drums.png";
+import duh from "../../../img/duhovble.png";
+import percs from "../../../img/Rectangle 4.png";
+import accsessoires from "../../../img/acccc.png";
+
+
 
 const CatalogBody = () => {
     return (
@@ -27,35 +34,35 @@ const CatalogBody = () => {
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-                                <img src={pianos} alt=""/>
+                                <img src={guitar} alt=""/>
                             </div>
                         </a>
                     </li>
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-                                <img src={pianos} alt=""/>
+                                <img src={drums} alt=""/>
                             </div>
                         </a>
                     </li>
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-                                <img src={pianos} alt=""/>
+                                <img src={duh} alt=""/>
                             </div>
                         </a>
                     </li>
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-                                <img src={pianos} alt=""/>
+                                <img src={percs} alt=""/>
                             </div>
                         </a>
                     </li>
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-                                <img src={pianos} alt=""/>
+                                <img src={accsessoires} alt=""/>
                             </div>
                         </a>
                     </li>
