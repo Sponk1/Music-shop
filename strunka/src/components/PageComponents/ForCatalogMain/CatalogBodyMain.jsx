@@ -1,19 +1,66 @@
 import React from "react";
-import "./catalogBodyMain.css"
+import "./catalogBodyMain.css";
 import { NavLink } from "react-router-dom";
-import Home from "../../../pages/Home"
+// import Home from "../../../pages/Home";
+import pianos from "../../../img/PianosCard.png";
 
 const CatalogBody = () => {
     return (
-        <div>
-            <span>Каталог</span>
+        <div className="catalog-body">
+            <span className="catalog-txt">Каталог</span>
             <div className="navigation">
-                <NavLink to={"/"}>Главная</NavLink>
-                <hr />
-                <a href="#">Каталог</a>
+                <nav>
+                    <NavLink to={"/"}>Главная</NavLink>
+                    <span> &mdash; </span>
+                    <NavLink to={"#"}>Каталог</NavLink>
+                </nav>
             </div>
             <div className="good-types">
-
+                <ul className="cards">
+                    <li className="product-wrapper">
+                        <a href="" className="type-card">
+                            <div className="product-photo">
+                                <img src={pianos} alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li className="product-wrapper">
+                        <a href="" className="type-card">
+                            <div className="product-photo">
+                                <img src={pianos} alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li className="product-wrapper">
+                        <a href="" className="type-card">
+                            <div className="product-photo">
+                                <img src={pianos} alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li className="product-wrapper">
+                        <a href="" className="type-card">
+                            <div className="product-photo">
+                                <img src={pianos} alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li className="product-wrapper">
+                        <a href="" className="type-card">
+                            <div className="product-photo">
+                                <img src={pianos} alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li className="product-wrapper">
+                        <a href="" className="type-card">
+                            <div className="product-photo">
+                                <img src={pianos} alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
             </div>
             <div className="downside-txt">
 
