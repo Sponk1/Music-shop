@@ -42,6 +42,7 @@ const CatalogBody = () => {
                         <a href="" className="type-card">
                             <div className="product-photo">
                                 <img src={drums} alt=""/>
+                                
                             </div>
                         </a>
                     </li>
