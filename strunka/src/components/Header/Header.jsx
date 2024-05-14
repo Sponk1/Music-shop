@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom"
 import scripkey from "../../img/scrip-key.svg"
 import tglogo from "../../img/tglogo.svg"
 import profilepic from "../../img/profilepic.svg"
-import CatalogMain from "../../pages/CatalogMain.jsx";
-
-
+import CatalogMain from "../../pages/CatalogMain.jsx"
 
 const Header = () => {
 
@@ -25,10 +23,8 @@ const Header = () => {
         </div>
             <div className="bottom-head">
                 <nav className="nav-bar-left">
-                    <NavLink to={"/CatalogMain"}>КАТАЛОГ</NavLink>
-                    <NavLink to={"/Clients"}>ПОКУПАТЕЛЯМ</NavLink>
-                    {/* <a href="/CatalogMain">КАТАЛОГ</a> */}
-                    {/* <a href="./Clients">ПОКУПАТЕЛЯМ</a> */}
+                    <a href="/CatalogMain">КАТАЛОГ</a>
+                    <a href="#">ПОКУПАТЕЛЯМ</a>
                 </nav>
                 <nav className="nav-bar-right">
                     <a href="#">О КОМПАНИИ</a>
