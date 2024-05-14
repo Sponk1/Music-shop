@@ -67,16 +67,33 @@
     padding-right: 15px;
 }
 
+.piano-img img {
+    height: 550px;
+    width: 730px
+
+}
+
 .guitar-n-drum-img {
     display: grid;
+    
 }
 
 .guitar-img {
     display: inline-block;
 }
 
+.guitar-img img {
+    height: 343px;
+    width: 327px;
+}
+
 .drums-img {
     align-self: flex-end;
+}
+
+.drums-img img {
+    width: 327px;
+    height: 186px;
 }
 
 .divider {

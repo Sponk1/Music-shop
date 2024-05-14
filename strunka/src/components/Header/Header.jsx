@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 import scripkey from "../../img/scrip-key.svg"
 import tglogo from "../../img/tglogo.svg"
 import profilepic from "../../img/profilepic.svg"
-import CatalogMain from "../../pages/CatalogMain.jsx";
+// import CatalogMain from "../../pages/CatalogMain.jsx";
 
 
 
@@ -31,7 +31,8 @@ const Header = () => {
                     {/* <a href="./Clients">ПОКУПАТЕЛЯМ</a> */}
                 </nav>
                 <nav className="nav-bar-right">
-                    <a href="#">О КОМПАНИИ</a>
+                    <NavLink to={"/AboutCompany"}>О КОМПАНИИ</NavLink>
+                    {/* <a href="#">О КОМПАНИИ</a> */}
                     <a href="#">КОРЗИНА</a>
                 </nav>
                     <a href="#" className="profile-pic">

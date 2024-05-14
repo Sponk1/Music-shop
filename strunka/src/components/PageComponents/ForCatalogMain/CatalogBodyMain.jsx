@@ -3,6 +3,11 @@ import "./catalogBodyMain.css";
 import { NavLink } from "react-router-dom";
 // import Home from "../../../pages/Home";
 import pianos from "../../../img/PianosCard.png";
+import drums from "../../../img/drums.png"
+import percs from "../../../img/percs.png"
+import guitar from "../../../img/Guitar.png"
+import duh from "../../../img/duhovble.png"
+import acc from "../../../img/accessuories.png"
 
 const CatalogBody = () => {
     return (
@@ -27,51 +32,49 @@ const CatalogBody = () => {
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-                                <img src={pianos} alt=""/>
+                                <img src={percs} alt=""/>
                             </div>
                         </a>
                     </li>
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-<<<<<<< HEAD
-                                <img src={pianos} alt=""/>
-=======
+                                {/* <img src={guitar} alt=""/> */}
                                 <img src={drums} alt=""/>
-<<<<<<< HEAD
->>>>>>> parent of c9dd517 (........)
-=======
-                                
->>>>>>> parent of 97db517 (Revert "........")
                             </div>
                         </a>
                     </li>
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-                                <img src={pianos} alt=""/>
+                                <img src={duh} alt=""/>
                             </div>
                         </a>
                     </li>
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-                                <img src={pianos} alt=""/>
+                                <img src={guitar} alt=""/>
                             </div>
                         </a>
                     </li>
                     <li className="product-wrapper">
                         <a href="" className="type-card">
                             <div className="product-photo">
-                                <img src={pianos} alt=""/>
-                            </div>
+                                <img src={acc} alt=""/>
+                            </div>  
                         </a>
                     </li>
                 </ul>
                 
             </div>
             <div className="downside-txt">
-
+                <span>
+                    Найти инструмент на любой вкус ? Не проблема ! Магазин СТРУНКА предоставит вам обширный каталог 
+                    <p>музыкальных инструментов, от ударных до духовых. Развивайте свое творческое начало по выгодным ценам и с</p>
+                    <p>лучшем качеством в стране.</p> 
+                    <p>Вы можете преобрести товар в торговых сетевых магазинах СТРУНКА или заказать онлайн!</p>
+                </span>
             </div>
         </div>
     );
