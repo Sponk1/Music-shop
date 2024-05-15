@@ -1,5 +1,6 @@
 import React from "react"
 import "./header.css"
+import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import scripkey from "../../img/scrip-key.svg"
 import tglogo from "../../img/tglogo.svg"
@@ -25,15 +26,12 @@ const Header = () => {
         </div>
             <div className="bottom-head">
                 <nav className="nav-bar-left">
-                    <NavLink to={"/CatalogMain"}>КАТАЛОГ</NavLink>
-                    <NavLink to={"/Clients"}>ПОКУПАТЕЛЯМ</NavLink>
-                    {/* <a href="/CatalogMain">КАТАЛОГ</a> */}
-                    {/* <a href="./Clients">ПОКУПАТЕЛЯМ</a> */}
+                    <NavLink to={"/CatalogMain"} className="nvl">КАТАЛОГ</NavLink>
+                    <NavLink to={"/Clients"} className="nvl">ПОКУПАТЕЛЯМ</NavLink>
                 </nav>
                 <nav className="nav-bar-right">
-                    <NavLink to={"/AboutCompany"}>О КОМПАНИИ</NavLink>
-                    {/* <a href="#">О КОМПАНИИ</a> */}
-                    <a href="#">КОРЗИНА</a>
+                    <NavLink to={"/AboutCompany" } className="nvl">О КОМПАНИИ</NavLink>
+                    <NavLink to={"#"} className="nvl">КОРЗИНА</NavLink>
                 </nav>
                     <a href="#" className="profile-pic">
                         <img src={profilepic} alt="Профиль" />

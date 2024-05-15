@@ -78,6 +78,10 @@ a {
     height: 74px;
 }
 
+.nvl {
+    width: 195px;
+}
+
 .nav-bar-right {
     display: flex;
     justify-content: center;
@@ -87,12 +91,28 @@ a {
 }
 
 .nav-bar-left a {
+    display: flex;
     margin-right: 100px;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.nav-bar-left .nvl:hover {
+    background: #601212;
 }
 
 .nav-bar-right a {
+    display: flex;
+    height: 100%;
+    align-items: center;
     margin-left: 80px;
     margin-right: 10px;
+}
+
+.nav-bar-right .nvl:hover {
+    background: #601212;
 }
 
 .profile-pic {
