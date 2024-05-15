@@ -44,7 +44,6 @@ const ForClients = () => {
                     telegram/@magaasStruna
                     <img src={tglogo} alt="" />
                 </a>
-                
             </div>
         </div>
     );
