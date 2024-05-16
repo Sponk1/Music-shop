@@ -10,7 +10,7 @@ import profilepic from "../../img/profilepic.svg"
 
 
 const Header = () => {
-
+    
     return(
         <div className="full-head">
             <div className="top-head">
@@ -31,10 +31,12 @@ const Header = () => {
                 </nav>
                 <nav className="nav-bar-right">
                     <NavLink to={"/AboutCompany" } className="nvl">О КОМПАНИИ</NavLink>
-                    <NavLink to={"#"} className="nvl">КОРЗИНА</NavLink>
+                    <NavLink to={"/ShopingCart"} className="nvl">КОРЗИНА</NavLink>
                 </nav>
                     <a href="#" className="profile-pic">
-                        <img src={profilepic} alt="Профиль" />
+                        <NavLink to={"#"}>
+                            <img src={profilepic} alt="Профиль" />
+                        </NavLink>
                     </a>
             </div>
         </div>

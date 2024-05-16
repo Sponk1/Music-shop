@@ -61,7 +61,7 @@
     margin-top: 100px;
 }
 
-.piano-img {
+/* .piano-img {
     display: flex;
     max-width: 730px;
     padding-right: 15px;
@@ -71,7 +71,29 @@
     height: 550px;
     width: 730px
 
+} */
+.piano-img {
+    display: flex;
+    justify-content: center;
+    max-width: 730px;
+    padding-right: 15px;
 }
+
+.piano-img .carousel {
+    width: 100%;
+    max-width: 730px;
+}
+
+.piano-img .slide {
+    display: flex;
+    justify-content: center;
+}
+
+.piano-img img {
+    height: 550px;
+    width: 730px;
+}
+
 
 .guitar-n-drum-img {
     display: grid;

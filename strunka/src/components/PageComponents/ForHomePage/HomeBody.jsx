@@ -1,12 +1,19 @@
 import React from "react"
+import { useState, useEffect } from "react"
+import { Carousel } from 'react-responsive-carousel';
 import "./homeBody.css"
+
 import pianoImg from "../../../img/PianoCarousel.png"
+import pianoImg2 from "../../../img/PianosCard2.png"
+import pianoImg3 from "../../../img/PianosCard3.png"
+
 import guitarImg from "../../../img/GuitarCarousel.png"
 import drumImg from "../../../img/DrumsCarousel.png"
 
 
 
 const HomeBody = () => {
+
     return(
         <div>
             <div className="full-body">
