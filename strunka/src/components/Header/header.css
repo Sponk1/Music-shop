@@ -119,9 +119,6 @@ a {
     background: #601212;
 }
 
-.nav-bar-right .nvl::after{
-    background: #601212;
-}
 
 .profile-pic {
     display: grid;
