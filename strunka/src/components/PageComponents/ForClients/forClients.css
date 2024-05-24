@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Leoscar&display=swap');
+
 .for-clients {
     display: grid;
     width: 100%;
-    padding-left: 244px;
+    padding: 0 244px;
     color: white;
     background: #141414;
+    font-family: 'Leoscar', sans-serif;
+    letter-spacing: 0.14em;
+    line-height: 1.8;
 }
 
 .buyers-txt {
@@ -11,41 +16,33 @@
     padding-top: 15px;
 }
 
-.road-map nav{
+.road-map nav {
     margin-top: 15px;
     color: #575756;
 }
+
 .road-map a {
     color: #575756;
 }
 
 .how-to-order {
-    display: flex;
-    flex-direction: column;
     font-size: 35px;
     margin-top: 50px;
 }
 
-.instruction-txt {
-    display: flex;
-    margin-top: 100px;
-    font-size: 30px;
-}
+
 
 ol {
     margin-top: 30px;
     font-size: 24px;
 }
 
-.off-shop { 
-    display: flex;
+.off-shop {
     margin-top: 100px;
     font-size: 30px;
 }
 
-.offline-txt { 
-    display: flex;
-    flex-direction: column;
+.offline-txt {
     margin-top: 30px;
     font-size: 24px;
 }
@@ -63,4 +60,39 @@ ol {
 img {
     width: 40px;
     height: 40px;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+    .for-clients {
+        padding: 0 120px;
+    }
+
+    .buyers-txt, .how-to-order, .instruction-txt, .off-shop, .offline-txt, ol, .tg {
+        font-size: 20px;
+    }
+
+    .tg {
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .for-clients {
+        padding: 0 20px;
+    }
+
+    .buyers-txt, .how-to-order, .instruction-txt, .off-shop, .offline-txt, ol, .tg {
+        font-size: 18px;
+    }
+
+    .tg {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .road-map nav, .tg {
+        text-align: center;
+    }
 }
