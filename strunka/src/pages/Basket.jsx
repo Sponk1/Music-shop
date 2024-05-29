@@ -1,6 +1,6 @@
 import React from "react";
 
-const Admin = () => {
+const Basket = () => {
     return (
         <div>
             <span>Admin pages</span>
@@ -8,4 +8,4 @@ const Admin = () => {
     );
 }
 
-export default Admin;
+export default Basket;

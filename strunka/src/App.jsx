@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="wrapper">
       <BrowserRouter>
+        {/* <AppRouter /> */}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/CatalogMain' element={<CatalogMain />} />
