@@ -31,7 +31,7 @@ const Header = () => {
                 </nav>
                 <nav className="nav-bar-right">
                     <NavLink to={"/AboutCompany" } className="nvl">О КОМПАНИИ</NavLink>
-                    <NavLink to={"/ShopingCart"} className="nvl">КОРЗИНА</NavLink>
+                    <NavLink to={"/Basket"} className="nvl">КОРЗИНА</NavLink>
                 </nav>
                     <a href="#" className="profile-pic">
                         <NavLink to={"#"}>
