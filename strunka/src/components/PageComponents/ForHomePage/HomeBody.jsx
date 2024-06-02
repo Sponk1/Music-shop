@@ -1,7 +1,9 @@
-import React from "react";
+import {React, useContext} from "react";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./homeBody.css";
+
+
 
 import pianoImg from "../../../img/PianoCarousel.png";
 import pianoImg2 from "../../../img/PianosCard2.png";
@@ -9,6 +11,7 @@ import pianoImg3 from "../../../img/PianosCard3.png";
 
 import guitarImg from "../../../img/GuitarCarousel.png";
 import drumImg from "../../../img/DrumsCarousel.png";
+import { Context } from "../../../main";
 
 const HomeBody = () => {
     return (

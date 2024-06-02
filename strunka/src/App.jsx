@@ -15,7 +15,6 @@ function App() {
   return (
     <div className="wrapper">
       <BrowserRouter>
-        {/* <AppRouter /> */}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/CatalogMain' element={<CatalogMain />} />
@@ -23,10 +22,10 @@ function App() {
           <Route path='/AboutCompany' element={<AboutCompany />} />
           <Route path='*' element={<Home />} />
           {
-            isAuth && <Route path='/Basket' element={<Basket />} />
+            isAuth && <Route key='/Basket' path='/Basket' element={<Basket />} />
           }
           {
-            isAuth && <Route path='/Admin' element={<Admin />} />
+            isAuth && <Route key='/Admin' path='/Admin' element={<Admin />} />
           }
         </Routes>
       </BrowserRouter>

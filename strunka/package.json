@@ -25,6 +25,7 @@
     "use-css": "^0.0.10"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
