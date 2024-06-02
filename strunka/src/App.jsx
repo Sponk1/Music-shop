@@ -5,6 +5,7 @@ import CatalogMain from './pages/CatalogMain'
 import Clients from './pages/Clients'
 import AboutCompany from './pages/AboutCompany'
 import Basket from './pages/Basket'
+import Admin from './pages/Admin'
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
           <Route path='*' element={<Home />} />
           {
             isAuth && <Route path='/Basket' element={<Basket />} />
+          }
+          {
+            isAuth && <Route path='/Admin' element={<Admin />} />
           }
         </Routes>
       </BrowserRouter>

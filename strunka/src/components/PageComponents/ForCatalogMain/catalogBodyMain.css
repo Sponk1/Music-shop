@@ -123,3 +123,16 @@
         height: auto;
     }
 }
+
+@media (max-width: 1252px) {
+    .catalog-txt,
+    .navigation,
+    .cards {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .product-wrapper {
+        width: 50%;
+    }
+}
