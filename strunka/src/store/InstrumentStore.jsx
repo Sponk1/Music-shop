@@ -32,7 +32,7 @@ export default class InstrumentStore{
     this._basket = basket;
     localStorage.setItem(STORAGE_BASKET_KEY, JSON.stringify(this._basket));
   }
-  setInsttuments(instruments) {
+  setInstruments(instruments) {
     this._instruments = instruments;
   }
   setSelectedType(type) {

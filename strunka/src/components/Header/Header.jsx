@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom"
 import scripkey from "../../img/scrip-key.svg"
 import tglogo from "../../img/tglogo.svg"
 import profilepic from "../../img/profilepic.svg"
+import { REGISTARTION_ROUTE } from '../utils/consts';
 // import CatalogMain from "../../pages/CatalogMain.jsx";
 
 
@@ -30,8 +31,9 @@ const Header = () => {
                     <NavLink to={"/Clients"} className="nvl">ПОКУПАТЕЛЯМ</NavLink>
                 </nav>
                 <nav className="nav-bar-right">
-                    <NavLink to={"/AboutCompany" } className="nvl">О КОМПАНИИ</NavLink>
+                    <NavLink to={"/AboutCompany"} className="nvl">О КОМПАНИИ</NavLink>
                     <NavLink to={"/Basket"} className="nvl">КОРЗИНА</NavLink>
+                    <NavLink to={"/Auth"} className="nvl">РЕГИСТРАЦИЯ</NavLink>
                 </nav>
                     <a href="#" className="profile-pic">
                         <NavLink to={"#"}>

@@ -6,7 +6,7 @@ import Clients from './pages/Clients'
 import AboutCompany from './pages/AboutCompany'
 import Basket from './pages/Basket'
 import Admin from './pages/Admin'
-
+import Auth from './pages/Auth';
 
 function App() {
 
@@ -21,6 +21,7 @@ function App() {
           <Route path='/Clients' element={<Clients />} />
           <Route path='/AboutCompany' element={<AboutCompany />} />
           <Route path='*' element={<Home />} />
+          <Route path='/Auth' element={<Auth />} />
           {
             isAuth && <Route key='/Basket' path='/Basket' element={<Basket />} />
           }
