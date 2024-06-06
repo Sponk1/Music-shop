@@ -1,16 +1,18 @@
-import React from "react"
+import React, { useContext } from "react"
+import {Button} from 'react-bootstrap'
 import "./header.css"
 import { useState } from "react"
+import { observer } from "mobx-react-lite";
 import { NavLink } from "react-router-dom"
 import scripkey from "../../img/scrip-key.svg"
 import tglogo from "../../img/tglogo.svg"
 import profilepic from "../../img/profilepic.svg"
-// import CatalogMain from "../../pages/CatalogMain.jsx";
+import { Context } from "../../main.jsx"
 
 
 
-const Header = () => {
-    
+const Header = observer( () => {
+    const {user} = useContext(Context)
     return(
         <div className="full-head">
             <div className="top-head">
@@ -29,18 +31,38 @@ const Header = () => {
                     <NavLink to={"/CatalogMain"} className="nvl">КАТАЛОГ</NavLink>
                     <NavLink to={"/Clients"} className="nvl">ПОКУПАТЕЛЯМ</NavLink>
                 </nav>
-                <nav className="nav-bar-right">
-                    <NavLink to={"/AboutCompany" } className="nvl">О КОМПАНИИ</NavLink>
+                {user.isAuth ?
+                    <>
+                     <nav className="nav-bar-right">
+                     <NavLink to={"/AboutCompany" } className="nvl">О КОМПАНИИ</NavLink>   
+                     <NavLink to={"/Basket"} className="nvl">КОРЗИНА</NavLink>
+                     <NavLink to={"#"} className='nvl'>админ</NavLink>
+                    </nav>
+                     <a href="#" className="profile-pic">
+                         <NavLink to={"#"}>
+                            <img src={profilepic} alt="Профиль" />
+                         </NavLink>
+                     </a>
+                     </>
+                    :
+                    <>
+                    <nav className="nav-bar-right">
+                    <NavLink to={"/AboutCompany" } className="nvl">О КОМПАНИИ</NavLink>   
                     <NavLink to={"/Basket"} className="nvl">КОРЗИНА</NavLink>
-                </nav>
+                    {/* <NavLink to={"#"} className='nvl'>админ</NavLink> */}
+                    </nav>
                     <a href="#" className="profile-pic">
                         <NavLink to={"#"}>
-                            <img src={profilepic} alt="Профиль" />
-                        </NavLink>
+                            <Button variant={""}  onClick={() => user.setIsAuth(true)}>
+                                <img src={profilepic} alt="Профиль" />
+                            </Button> 
+                         </NavLink>
                     </a>
+                    </>
+                }
             </div>
         </div>
     );
-}
+});
 
 export default Header;
