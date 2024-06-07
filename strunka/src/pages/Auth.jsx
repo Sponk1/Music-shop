@@ -6,6 +6,9 @@ import { Card, Container, Form, Button, Row } from "react-bootstrap";
 import { REGISTRATION_ROUTE } from "../utils/consts";
 
 function Auth() {
+    const location = useLocation()
+
+
     return (
       <Container
         className="d-flex justify-content-center align-items-center"
