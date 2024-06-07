@@ -12,6 +12,8 @@ import { Container } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import { Context } from "../../../main";
 import TypeBar from "./TypeBar";
+import BrandBar from "./BrandBar";
+import DeviceList from "./DeviceList";
 
 
 
@@ -23,7 +25,8 @@ const CatalogBody = () => {
                     <TypeBar />
                 </Col>
                 <Col md={9}>
-                
+                    <BrandBar />
+                    <DeviceList />
                 </Col>
             </Row>
 
