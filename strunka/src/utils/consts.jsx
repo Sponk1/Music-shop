@@ -4,3 +4,4 @@ export const REGISTRATION_ROUTE = "/Registration";
 export const BASKET_ROUTE = "/Basket"
 export const HOME_ROUTE = "/";
 export const INSTRUMENT_ROUTE = "/Instrument";
+export const CATALOG_ROUTE = "/CatalogMain";

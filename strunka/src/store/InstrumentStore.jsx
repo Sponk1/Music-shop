@@ -6,7 +6,8 @@ export default class InstrumentStore{
   constructor() {
     this._types = [
         {id: 1, name: 'Гитары'},
-        {id: 2, name: 'Ударные'}
+        {id: 2, name: 'Ударные'},
+        {id: 3, name: 'Клавишные'},
     ]
     this._brands = [
         {id: 1, name: "Yamaha"},
@@ -19,6 +20,7 @@ export default class InstrumentStore{
         {id: 1,	name: "Solar V2.6C", price: 119990, img: "38615c70-8a8e-4de9-b3c3-4dce9efc465e.jpg"},
 
     ]
+    this._selectedType = {};
     makeAutoObservable(this);
   }
 
@@ -32,7 +34,7 @@ export default class InstrumentStore{
     this._basket = basket;
     localStorage.setItem(STORAGE_BASKET_KEY, JSON.stringify(this._basket));
   }
-  setInsttuments(instruments) {
+  setInstruments(instruments) {
     this._instruments = instruments;
   }
   setSelectedType(type) {

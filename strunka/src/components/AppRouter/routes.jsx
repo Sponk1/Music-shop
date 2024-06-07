@@ -7,6 +7,7 @@ import Home from "../../pages/Home";
 import Registration from "../../pages/Registration";
 import Instrument from "../../pages/Instrument";
 import Auth from '../../pages/Auth'
+import CatalogMain from "../../pages/CatalogMain";
 
 import { ADMIN_ROUTE, BASKET_ROUTE, HOME_ROUTE, INSTRUMENT_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE,  } from "../../utils/consts";
 
