@@ -1,74 +1,53 @@
-import React, { useContext, useState, context } from 'react';
-//import styles from './AuthForm.module.css';
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { LOGIN_ROUTE, REGISTARTION_ROUTE} from '../components/utils/consts'; //!!!!!
-//import { login, registartion } from '../http/userAPI';
-import { observer } from 'mobx-react-lite';
-//import Login from '../../src/components/PageComponents/Login/Login'
+import Footer from "../components/Footer/Footer";
+import { NavLink, useLocation} from "react-router-dom";
+import { Card, Container, Form, Button, Row } from "react-bootstrap";
+import { LOGIN_ROUTE, REGISTRATION_ROUTE } from "../utils/consts";
 
-
-const AuthForm = observer(() => {
- const [email, setEmail] = useState('');
- const [password, setPassword] = useState('');
- const handleSubmit = (e) => {
-    e.preventDefault();   
-};
-    const {user} = useContext(context)
+function Auth() {
     const location = useLocation()
-    //const isLogin = location.pathname == { <Login /> }
-    const navigate = useNavigate()
-    const auth = async () => {
-      try {
-          let data;
-          if (isLogin) {
-            data= await login(email, password) 
-          } else {
-            data= await registration(email, password)
-          }
-        user.setUser(user)
-        user.setIsAuth(true)
-        navigate(SHOP_ROUTE)
-      } catch (e) {
-        alert(e.response.data.message)
-      }
-    }
+    const isLogin = location.pathname === LOGIN_ROUTE
+    console.log(location)
 
- return (
-    <form className={styles.form} onSubmit={handleSubmit}>
-      <h2 className={styles.title}>{isLogin ? 'Авторизация' : 'Регистрация'}</h2>
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        name="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      {isLogin
-       
-        ?
-       
-        <div className={styles.question_box}>
-            <NavLink to={REGISTARTION_ROUTE} className={styles.question}>Нет аккаунта?</NavLink>
-        </div>
-        
-        :
+    return (
+      <Container
+        className="d-grid align-items-center justify-content-center" 
+        style={{height: window.innerHeight - 54, maxWidth: '100%'}} //height: window.innerHeight - 54 
+      > 
+        {/* <Header 
+          className="d-flex align-items-center"
+          style={{}}  
+        /> */}
+        <Card style={{ width: 600 }} className="p-5">
+          <h2 className="m-auto">{isLogin ? 'Авторизация' : 'Регистрация'}</h2>
+          <Form className="d-flex flex-column">
+            <Form.Control className="mt-3" placeholder="Введите ваш email..." />
+            <Form.Control
 
-        <div className={styles.question_box}>
-            <NavLink to={LOGIN_ROUTE} className={styles.question}>Есть аккаунт?</NavLink>
-        </div>
-      }
-      <button type="submit" className={styles.submit} onClick={auth}>
-        {isLogin ? 'Войти' : 'Зарегистрироваться'}
-      </button>
-    </form>
- );
-});
+              placeholder="Введите ваш пароль..."
+            />
+            <Row className="d-flex justify-content-between mt-3 pl-3 pr-3 align-self-center">
+              {isLogin ? 
+                <div className="mb-1">
+                    Нет аккаунта? <NavLink to={REGISTRATION_ROUTE} style={{color: "black"}}>Зарегистрируйтесь!</NavLink>
+                </div>
+                :
+                <div className="mb-1">
+                    Есть аккаунт? <NavLink to={LOGIN_ROUTE} style={{color: "black"}}>Войдите!</NavLink>
+                </div>
+              }
+                <Button
 
-export default AuthForm;
+                variant={"outline-success"}
+                >
+                    {isLogin ? 'Войти'  : 'Регистрация'}
+
+                </Button>
+            </Row>
+          </Form>
+        </Card>
+        {/* <Footer /> */}
+      </Container>
+    );
+}
+
+export default Auth;
