@@ -7,6 +7,7 @@ import AboutCompany from './pages/AboutCompany'
 import Basket from './pages/Basket'
 import Admin from './pages/Admin'
 import Auth from './pages/Auth'
+import Instrument from './pages/Instrument'
 import { observer } from "mobx-react-lite";
 import { Context } from './main'
 
@@ -22,6 +23,7 @@ const App = observer(() => {
           <Route path='/Clients' element={<Clients />} />
           <Route path='/AboutCompany' element={<AboutCompany />} />
           <Route path='/Auth' element={<Auth />} />
+          <Route path='/Instrument' element={<Instrument />} />
           <Route path='*' element={<Home />} />
           {user.isAuth && <Route path='/Basket' element={<Basket />} />}
           {user.isAuth && <Route path='/Admin' element={<Admin />} />}

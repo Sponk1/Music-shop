@@ -8,7 +8,7 @@ const DeviceList = observer(() => {
     const { instrument } = useContext(Context);
 
     return (
-        <Row className="d-flex">
+        <Row className="d-flex" style={{display: 'flex'}}>
             {instrument.instruments.map(instrument =>
                 <DeviceItem key={instrument.id} instrument={instrument}/>
             )}

@@ -10,9 +10,9 @@ const BrandBar = observer( () => {
         <Row className="d-flex">
             {instrument.brands.map(brand =>
                 <Card
-                    style={{cursor: 'pointer'}}
+                    style={{cursor: 'pointer', display: 'flex', padding: '3', justifyContent: 'center'}}
                     key={brand.id}
-                    className="d-grid p-3 justify-content-center col-1"
+                    className="col-1"
                     onClick={() => instrument.setSelectedBrand(brand)}
                     border={brand.id === instrument.selectedBrand.id ? 'danger' : 'loght'}
                 >

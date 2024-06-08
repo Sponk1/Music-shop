@@ -22,8 +22,8 @@ class InstrumentStore {
     this._instruments = [
       { id: 1, name: "Yamaha C40", price: 50000, img: "868f8776-3aa8-4cdf-b7f8-8f180fa58759.jpg" },
       { id: 3, name: "Соната РКБ-218", price: 5000000, img: "f795ceb3-7544-49f5-9eac-b8993790d79a.jpg" },
-      { id: 6, name: "Solar A2.7 Canibalismo+", price: 125990, img: "34fd6ca3-32d9-4992-81da-900d1142f8ef.jpg" },
-      { id: 1, name: "Solar V2.6C", price: 119990, img: "38615c70-8a8e-4de9-b3c3-4dce9efc465e.jpg" },
+      { id: 6, name: "Solar A2.7 Canibalismo+", price: 125990, img: "34fd6ca3-32d9-4992-81da-900d1142f8ef.jpg" }
+      
     ];
     this._selectedType = {};
     this._selectedBrand = {};
