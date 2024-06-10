@@ -1,12 +1,25 @@
 .footer {
-    display: flex;
+    
+    position: fixed;
+    width: 100%;
+    bottom: -5px;
     padding-top: 10px;
     height: 70px;
+    z-index: 1000;
+    transition: bottom 0.3s ease;
     /* margin-top: -3.9px; */
     background: #7E0404;
+    text-align: center;
+
 }
 
 .footer span {
     margin-left: 15px;
-    margin-top: 10px;
+    
+    padding-bottom: 15px;
+}
+
+.footer p {
+    margin-top: 0;
+    margin-left: 12px;
 }

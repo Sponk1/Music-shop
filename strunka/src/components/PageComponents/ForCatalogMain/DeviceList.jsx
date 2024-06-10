@@ -9,9 +9,9 @@ const DeviceList = observer(() => {
 
     return (
         <Row className="d-flex" style={{display: 'flex'}}>
-            {instrument.instruments.map(instrument =>
-                <DeviceItem key={instrument.id} instrument={instrument}/>
-            )}
+            {instrument.instruments.filter(item => (!instrument.selectedType || item.typeId === instrument.selectedType.id) && (!instrument.selectedBrand || item.brandId === instrument.selectedBrand.id))
+                .map(instrument => <DeviceItem key={instrument.id} instrument={instrument} />)
+            }
         </Row>
     );
 });

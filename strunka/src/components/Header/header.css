@@ -139,6 +139,20 @@ a {
 .profile-pic:hover {
     background: #601212;
 }
+.button-name {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 74px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-name:hover {
+    background-color: #601212;
+}
 
 @media (max-width: 1200px) {
     .scripkey-img {
